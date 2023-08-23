@@ -2,9 +2,7 @@ class Solution {
 public:
     string encode(vector<string> &strs) 
     {
-
         string Encoded = "";
-
         for(int i = 0;i<strs.size(); i++)
         {
             string temp = strs[i];
@@ -20,12 +18,9 @@ public:
     {        
         vector<string> Decoded;
         int size = 0, i = 0;
-
         while(i<str.length())
         {
-
             //********* First Method *********
-            
             int j = i;
             while(str[j] != '#')
             {
@@ -34,7 +29,6 @@ public:
             int size = stoi(str.substr(i, j-i));            
             i = j+1;
             string to_push = "";
-            
             while(size--)
             {
                 to_push += str[i];
