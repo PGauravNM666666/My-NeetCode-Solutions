@@ -11,8 +11,9 @@ public:
       }
       // sort them in reverse order
       sort(pair.rbegin(), pair.rend());
-      
+
       /*
+      calculate the time for each car.
       if the stack is empty -> push. after that, check the current adding time is less than the stack.top() 
       which is the speed of the vehicle which is ahead to the current one(since we sorted them in reverse order).
       if the current time is lower than the top one, it means the current one is faster than the ahead one and they will cross the paths before reaching the target.
