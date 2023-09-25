@@ -32,8 +32,8 @@ public:
                 }
             }
         }
-        if(rem != 0)
-            digits.insert(digits.begin(), rem);
+        
+        digits.insert(digits.begin(), rem);
         return digits;
     }
 };
