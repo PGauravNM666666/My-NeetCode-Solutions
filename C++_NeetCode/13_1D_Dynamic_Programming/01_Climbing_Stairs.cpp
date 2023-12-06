@@ -1,6 +1,5 @@
 class Solution {
 public:
-
    int climbStairs(int n) 
    {
       int one = 1,two = 1;
